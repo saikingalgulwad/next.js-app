@@ -1,3 +1,4 @@
+'use client'
 import Link from "next/link"
 async function  getdata() {
   const data = await fetch("https://next-js-app-eight-brown.vercel.app/api/topics",{cache:"no-store"})
