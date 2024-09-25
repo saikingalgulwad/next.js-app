@@ -5,18 +5,18 @@ async function  getdata() {
   return data.json()
   
 }
-const Deletedate = async(data) =>{
-    await fetch (`https://next-js-app-eight-brown.vercel.app/api/topics/${data}`,{
-    method:"DELETE",
-    headers:{
-      "Content-type":"application/json",
-    }
-})}
+
 
 async function Topic() {
   
    const data =await getdata();
    
+   const Deletedate = async(data) =>{
+    console.log(data);
+      await fetch (`https://next-js-app-eight-brown.vercel.app/api/topics/${data}`,{
+      method:"DELETE",
+   
+  })}
   return (
     <>
     { data.map(d=>(
