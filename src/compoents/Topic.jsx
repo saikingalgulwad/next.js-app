@@ -7,7 +7,7 @@ async function  getdata() {
 }
 const Deletedate = async(data) =>{
   const dataes =  await fetch (`https://next-js-app-eight-brown.vercel.app/api/topics${data}`,{
-    method:"PUT",
+    method:"DELETE",
 })}
 
 async function Topic() {

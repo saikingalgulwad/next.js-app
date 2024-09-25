@@ -2,12 +2,12 @@ import connectMongoDB from "@/libs/mongodb";
 import Topic from "@/models/topic";
 import { NextResponse } from "next/server";
 
-export default async function PUT(req,{params}){
+export default async function DELETE(req,{params}){
     const {id}= params;
 
     await connectMongoDB()
-    const data=await Topic.findByIdAndDelete(id)
+    await Topic.findByIdAndDelete(id)
 
 
-    return NextResponse.json({message:data});
+    return NextResponse.json({message:"delete"},{status:200});
 }
