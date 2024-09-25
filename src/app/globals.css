@@ -1,0 +1,105 @@
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  align-items:center;
+  padding: 20px;
+
+}
+
+.link{
+
+ height: 30px;
+ width: 120px;
+ align-items: center;
+ color: white;
+text-decoration: none;
+font-size: 20px;
+
+
+
+}
+.home{
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+ 
+}
+body{
+  background: linear-gradient(rgb(15, 15, 116),rgba(255, 0, 149, 0.63));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.delete{
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 80px;
+  color: white;
+  font-size: 18px;
+  margin-left: 15px;
+}
+.main{
+  display: flex;
+  width: 60vw;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  border: 2px dotted white;
+  border-radius: 10px;
+  padding: 20px;
+  justify-content: space-between;
+}
+.page{
+  width: 70%;
+  font-size: 20px;
+}
+.main-2{
+  display: flex;
+  gap: 10px;
+  align-items:baseline;
+
+}
+.update{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+
+}
+form{
+  align-items: center;
+color: white;
+width: 70vw;
+margin: auto;
+margin-top: 30px;
+padding: 20px;
+font-size: 30px;
+}
+.input-title{
+  height: 40px;
+  width: 70vw;
+  font-size: 20px;
+}
+.input-description{
+  height: 40px;
+  width: 70vw;
+  font-size: 20px;
+}
+.submit{
+  background-color: rgb(0, 255, 179);
+  border: none;
+  border-radius: 10px;
+  height: 47px;
+  width: 90px;
+  color: rgb(0, 0, 0);
+ font-weight: bolder;
+ font-size: 20px;
+
+
+}
