@@ -1,5 +1,6 @@
 'use client'
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 async function  getdata() {
   const data = await fetch("https://next-js-app-eight-brown.vercel.app/api/topics",{cache:"no-store"})
   return data.json()
@@ -8,15 +9,21 @@ async function  getdata() {
 
 
 async function Topic() {
+  const router = useRouter();
   
    const data =await getdata();
    
-   const Deletedate = async(data) =>{
-    console.log(data);
-      await fetch (`https://next-js-app-eight-brown.vercel.app/api/topics/${data}`,{
-      method:"DELETE",
+   const Deletedate = async(dataes) =>{
+    const yes = confirm("Are you sure?");
+    if(yes){
+      await fetch (`https://next-js-app-eight-brown.vercel.app/api/topics?id=${dataes}`,{
+      method:"DELETE"
    
-  })}
+  });
+  router.refresh();
+
+}
+}
   return (
     <>
     { data.map(d=>(
