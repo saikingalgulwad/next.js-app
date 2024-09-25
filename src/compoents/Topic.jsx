@@ -4,6 +4,10 @@ async function  getdata() {
   return data.json()
   
 }
+const Deletedate = async(data) =>{
+  const dataes =  await fetch (`https://next-js-app-eight-brown.vercel.app/api/topics${data}`,{
+    method:"PUT",
+})}
 
 async function Topic() {
   
@@ -19,7 +23,7 @@ async function Topic() {
       </div>
       <div className="main-2">
         <Link className="update" href={`/update/${d._id}`}>Update</Link>
-        <button className="delete">Delete</button>
+        <button onClick={()=>Deletedate(d._id)} className="delete">Delete</button>
       </div>
       
     </div>))}</>

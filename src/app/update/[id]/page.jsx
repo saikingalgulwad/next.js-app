@@ -1,6 +1,6 @@
 
 
-function page() {
+function page({params}) {
   return (
     <form>
    
