@@ -18,7 +18,7 @@ function Add() {
     alert("pleace enter some letter");
   }
   try{
-    const res =await fetch ("http://localhost:3000/api/topics",{
+    const res =await fetch ("https://next-js-app-eight-brown.vercel.app/api/topics",{
       method:"POST",
       headers:{
         "Content-type":"application/json",
